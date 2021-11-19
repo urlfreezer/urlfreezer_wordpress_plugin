@@ -3,8 +3,8 @@
 Plugin Name: URL Freezer SaaS
 Description: Integrates URL Freezer SaaS with your website
 Version:     1.0.0
-Author:      Torricelli
-Author URI:  https://www.fiverr.com/torricelli
+Author:      URL Freezer
+Author URI:  http://urlfreezer.com
 Text Domain: url-freezer-saas
 */
 

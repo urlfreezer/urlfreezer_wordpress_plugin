@@ -1,5 +1,5 @@
 === URL Freezer SaaS ===
-Contributors: eduardoescdel
+Contributors: urlfreezer, linker_blog
 Tags: url check, seo, report, site health
 Requires at least: 5.0
 Tested up to: 5.8
