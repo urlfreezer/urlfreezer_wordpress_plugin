@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: URL Freezer SaaS
-Description: Integrates URL Freezer SaaS with your website
+Plugin Name: URL Freezer
+Description: Integrates URL Freezer with your website
 Version:     1.0.0
 Author:      URL Freezer
 Author URI:  http://urlfreezer.com
@@ -10,12 +10,12 @@ Text Domain: urlfreezer
 
 defined( 'ABSPATH' ) or die;
 
-define( 'URL_FREEZER_SAAS_VER', '1.0.0' );
-define( 'URL_FREEZER_SAAS_FILE', __FILE__ );
-define( 'URL_FREEZER_SAAS_DIR_PATH', plugin_dir_path( __FILE__ ) );
+define( 'URLFREEZER_VER', '1.0.0' );
+define( 'URLFREEZER_FILE', __FILE__ );
+define( 'URLFREEZER_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
-if ( ! class_exists( 'URL_Freezer_SaaS' ) ) {
-	class URL_Freezer_SaaS {
+if ( ! class_exists( 'URLFreezer' ) ) {
+	class URLFreezer {
 		public static function get_instance() {
 			if ( self::$instance == null ) {
 				self::$instance = new self();
@@ -64,8 +64,8 @@ if ( ! class_exists( 'URL_Freezer_SaaS' ) ) {
 			$user_id = trim( get_option( 'urlfreezer_id' ) );
 			if ( $user_id == '' ) return;
 
-			require_once( URL_FREEZER_SAAS_DIR_PATH . 'snippet.php' );
+			require_once( URLFREEZER_DIR_PATH . 'snippet.php' );
 		}
 	}
 }
-URL_Freezer_SaaS::get_instance();
+URLFreezer::get_instance();

@@ -1,4 +1,4 @@
-=== URL Freezer SaaS ===
+=== URL Freezer ===
 Contributors: urlfreezer, linker_blog
 Tags: url check, seo, report, site health
 Requires at least: 5.0
