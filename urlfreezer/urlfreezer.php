@@ -5,7 +5,7 @@ Description: Integrates URL Freezer SaaS with your website
 Version:     1.0.0
 Author:      URL Freezer
 Author URI:  http://urlfreezer.com
-Text Domain: url-freezer-saas
+Text Domain: urlfreezer
 */
 
 defined( 'ABSPATH' ) or die;
@@ -37,16 +37,16 @@ if ( ! class_exists( 'URL_Freezer_SaaS' ) ) {
 		}
 
 		public function register_settings() {
-			register_setting( 'url_freezer_saas_optsgroup', 'url_freezer_saas_enabled' );
-			register_setting( 'url_freezer_saas_optsgroup', 'url_freezer_saas_id' );
+			register_setting( 'urlfreezer_optsgroup', 'urlfreezer_enabled' );
+			register_setting( 'urlfreezer_optsgroup', 'urlfreezer_id' );
 		}
 
 		public function add_admin_menu() {
 			add_menu_page(
-				__( 'URL Freezer', 'url-freezer-saas' ),
-				__( 'URL Freezer', 'url-freezer-saas' ),
+				__( 'URL Freezer', 'urlfreezer' ),
+				__( 'URL Freezer', 'urlfreezer' ),
 				'manage_options',
-				'url-freezer-saas',
+				'urlfreezer',
 				array( $this, 'render_options_page' ),
 				'dashicons-media-code'
 			);
@@ -58,10 +58,10 @@ if ( ! class_exists( 'URL_Freezer_SaaS' ) ) {
 
 
 		public function add_script() {
-			$enabled = trim( get_option( 'url_freezer_saas_enabled' ) );
+			$enabled = trim( get_option( 'urlfreezer_enabled' ) );
 			if ( $enabled  == '' ) return;
 
-			$user_id = trim( get_option( 'url_freezer_saas_id' ) );
+			$user_id = trim( get_option( 'urlfreezer_id' ) );
 			if ( $user_id == '' ) return;
 
 			require_once( URL_FREEZER_SAAS_DIR_PATH . 'snippet.php' );
