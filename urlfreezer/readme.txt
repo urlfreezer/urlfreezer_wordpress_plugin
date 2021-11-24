@@ -40,6 +40,6 @@ You're ready to go!
 == Changelog ==
 
 = 1.0.0 =
-*Release Date - 17 November 2021*
+*Release Date - 24 November 2021*
 
 * Plugin publication
