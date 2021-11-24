@@ -19,9 +19,9 @@ URL Freezer features include:
 * Notify you for offline link.
 * Automatically activate snapshot.
 
-This plugin integrate with the external service at https://urlfreezer.com, 
+This plugin integrates with the external service at https://urlfreezer.com, 
 once activated you need to configure your URL Freezer's User ID that you
-can find in the install page [https://urlfreezer.com/app/script.html](https://urlfreezer.com/app/script.html).
+can find in the installation page [https://urlfreezer.com/app/script.html](https://urlfreezer.com/app/script.html).
 
 This plugin will install the URL Freezer script in all your pages, every time a user will
 load one of the page of your site, the URL Freezer script will collect all the outgoing links in the 
@@ -29,11 +29,23 @@ page, and send them to http://urlfreezer.com to check if the links are still onl
 if any of the links is offline URL Freezer will provide a link to a snapshot of the original
 link and the script will automatically replace the link in the page with the link to 
 the snapshot.
+
+In the specific each time a page is load the script will send to URL Freezer
+
+ * The URL Freezer User ID
+ * The url of the page loaded
+ * The outgoing links found in the current page
+
+For outgoing links is meant all the links that go to a different domain than the one of the page that has the links
  
 
 == Installation ==
 
-Upload the URL Freezer plugin to your blog, activate it, configure your URL Freezer's User ID and enable it.
+Upload the URL Freezer plugin to your blog, activate it.
+
+Get the URL Freezer's User Id from [https://urlfreezer.com/app/script.html](https://urlfreezer.com/app/script.html) using your account.
+
+Configure your URL Freezer's User ID and enable it.
 
 You're ready to go!
 
